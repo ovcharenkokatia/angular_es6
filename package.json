@@ -20,7 +20,12 @@
   "homepage": "https://github.com/Foxandxss/angular-webpack-workflow",
   "dependencies": {
     "angular": "^1.4.8",
-    "angular-ui-router": "^0.2.18"
+    "angular-ui-router": "^0.2.18",
+    "bootstrap-sass": "^3.3.6",
+    "css-loader": "^0.23.1",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.8",

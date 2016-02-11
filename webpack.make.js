@@ -35,17 +35,25 @@ module.exports = function makeWebpackConfig (options) {
 
   config.module = {
     preLoaders: [],
-    loaders: [{
-      test: /\.js$/,
-      loader: 'babel',
-      exclude: /node_modules/
-    }, {
-      test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
-      loader: 'file'
-    }, {
-      test: /\.html$/,
-      loader: 'raw'
-    }]
+    loaders: [
+      {
+        test: /\.js$/,
+        loader: 'babel',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+        loader: 'file'
+      },
+      {
+        test: /\.html$/,
+        loader: 'raw'
+      },
+      {
+        test: /\.(css|scss)$/,
+        loader: 'style!css!sass'
+      }
+    ]
   };
 
   if (TEST) {

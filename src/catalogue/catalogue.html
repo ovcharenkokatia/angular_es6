@@ -1,0 +1,13 @@
+<div>
+    <h1> Here should be a lot of goods </h1>
+    <ul>
+        <li ng-repeat="product in catalogue.list">
+            <a ui-sref="product({productID: product.id})">
+                <p><b>{{product.name}}</b></p>
+                <p>{{product.img}}</p>
+                <p>{{product.price}}</p>
+                <p>{{product.description}}</p>
+            </a>
+        </li>
+    </ul>
+</div>
