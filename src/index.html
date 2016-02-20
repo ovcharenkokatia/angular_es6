@@ -1,18 +1,21 @@
 <!doctype html>
 <html ng-app="app" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Angular App</title>
-  <base href="/">
+    <meta charset="UTF-8">
+    <title>Angular App</title>
+    <base href="/">
 </head>
 <body>
-  <div class="container">
+<div class="container">
     <div class="col-md-12">
-      <span ui-sref="home"> Home </span>
-      <span ui-sref="catalogue"> Catalogue </span>
-      <span ui-sref="contacts" style="border-radius: 5%"> Contacts </span>
+        <ul class="nav nav-tabs">
+            <li role="presentation" ui-sref="home"> Home </li>
+            <li role="presentation" ui-sref="catalogue"> Catalogue </li>
+            <li role="presentation" ui-sref="contacts"> Contacts </li>
+            <li role="presentation" ui-sref="users"> Users </li>
+        </ul>
     </div>
-    <ui-view> </ui-view>
-  </div>
+    <ui-view></ui-view>
+</div>
 </body>
 </html>

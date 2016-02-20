@@ -1,0 +1,14 @@
+<div class="col-md-12">
+    <h1> The first user is: </h1>
+    <div>
+    <p> name: {{ users.user.name }} </p>
+    <p> surname: {{ users.user.surname }} </p>
+    <p> username: {{ users.user.username }} </p>
+    </div>
+    <input type="text" class="form-group" ng-model="userOne">
+    <button class="btn btn-default" ng-click="users.addUser(userOne)">
+        Add user to the array
+    </button>
+
+    <create-user-directive> </create-user-directive>
+</div>
